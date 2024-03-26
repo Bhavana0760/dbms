@@ -1,9 +1,12 @@
 Aim: Demonstrating creation of tables, applying the view concepts on the tables.
 
 Consider the following schema for a Library Database:
-BOOK (BOOK_ID, TITLE, PUBLISHER_NAME,PUB_YEAR) BOOKAUTHORS (BOOK_ID, AUTHOR_NAME) PUBLISHER (NAME, ADDRESS,PHONE)
+BOOK (BOOK_ID, TITLE, PUBLISHER_NAME,PUB_YEAR)
+BOOKAUTHORS (BOOK_ID, AUTHOR_NAME) 
+PUBLISHER (NAME, ADDRESS,PHONE)
 BOOK_COPIES (BOOK_ID, PROGRAMME _ID,NO_OF_COPIES)
-BOOK_LENDING (BOOK_ID, PROGRAMME _ID, CARD_NO, DATE_OUT, DUE_DATE) LIBRARY_PROGRAMME (PROGRAMME_ID, PROGRAMME_NAME, ADDRESS)
+BOOK_LENDING (BOOK_ID, PROGRAMME _ID, CARD_NO, DATE_OUT, DUE_DATE)
+LIBRARY_PROGRAMME (PROGRAMME_ID, PROGRAMME_NAME, ADDRESS)
 Write SQL queries to
 1. Retrieve details of all books in the library – id, title, name of publisher, authors, number of copies in each branch,etc.
 2. Get the particulars of borrowers who have borrowed more than 3 books, but from Jan 2017 to Jun2017.
